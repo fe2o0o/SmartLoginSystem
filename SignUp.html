@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="master-css/bootstrap.min.css">
+    <link rel="stylesheet" href="master-css/index.css">
+    <title>SignUp</title>
+</head>
+<body>
+    <section class="signUp vh-100 d-flex justify-content-center align-items-center">
+        <div class="container p-5">
+            <h1 class="text-center">Smart Login System</h1>
+            <form class="mb-3">
+                <div class="parent  mb-4">
+                    <input type="text" placeholder="Enter Your Name" class="mb-2 form-control" id="signName">
+                    <small class="alert alert-danger d-none p-1 fs-6 ">Error Message</small>
+                </div>
+                <div class="parent mb-4">
+                    <input type="email" placeholder="Enter Your E-mail" class="mb-2 form-control" id="signMail">
+                    <small class="alert alert-danger d-none p-1 fs-6 ">Error Message</small>
+                </div>
+                <div class="parent mb-4">
+                    <input type="password" placeholder="Enter Your Password" class="mb-2 form-control" id="signPassword">
+                    <small class="alert alert-danger d-none p-1 fs-6 ">Error Message</small>
+                </div>
+                <div id="succesAlert" class="success d-none">
+                    <h4 class="alert alert-success text-success p-1 text-center">Success</h4>
+                </div>
+                <button id="signUpBtn" class="btn btn-outline-info form-control">Sign Up</button>
+            </form>
+            <p class="text-white text-center lead">I Have Account <span><a href="index.html"class="text-white">Sign In</a></span></p>
+        </div>
+    </section>
+    <script src="master-js/bootstrap.bundle.min.js"></script>
+    <script src="master-js/index.js"></script>
+</body>
+</html>
